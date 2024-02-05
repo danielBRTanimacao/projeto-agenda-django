@@ -1,5 +1,7 @@
 Projeto curso de desenvolvimento python otavio miranda
 
+Link do canal dele https://www.youtube.com/@OtavioMiranda
+
 Iniciar o projeto Django
 
 ```
