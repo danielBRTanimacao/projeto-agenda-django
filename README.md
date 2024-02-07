@@ -2,6 +2,16 @@ Projeto curso de desenvolvimento python otavio miranda
 
 Link do canal dele https://www.youtube.com/@OtavioMiranda
 
+Rodar esse projeto
+
+```
+git clone THIS_REPOSITORY
+recommended*
+python -m venv venv
+pip install -r requirements.txt
+python manage.py runserver
+```
+
 Iniciar o projeto Django
 
 ```
