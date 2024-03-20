@@ -1,4 +1,6 @@
 {% extends "global/base.html" %}
 {% block content %}
-    <h1>BLock e content</h1>
+    {% for contact in contacts %}
+        {{ contact.first_name }} <br>
+    {% endfor %}
 {% endblock content %}
