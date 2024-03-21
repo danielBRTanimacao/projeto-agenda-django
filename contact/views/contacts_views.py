@@ -2,7 +2,7 @@ from django.shortcuts import render
 from contact.models import Contact
 
 def index(request):
-    contatcts = Contact.objects.all()
+    contatcts = Contact.objects.filter(show=True).order_by('-id')[:10]
 
     context = {
         'contacts': contatcts,
