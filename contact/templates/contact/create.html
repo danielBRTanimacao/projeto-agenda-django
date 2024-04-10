@@ -4,10 +4,11 @@
         <h2>Contact</h2>
 
         <form 
-            action=""
+            action="{% url "contact:create" %}"
             method="POST"
             enctype="multipart/form-data"
-        >
+        > 
+        {% csrf_token %}
 
         <div class="form-content">
             <div class="form-group">
@@ -18,7 +19,7 @@
 
         <div class="form-content">
             <div class="form-group">
-            <button class="btn" type="submit">Send</button>
+            <button class="btn" type="submit">Enviar</button>
             </div>
         </div>
 
