@@ -11,10 +11,12 @@
         {% csrf_token %}
 
         <div class="form-content">
-            <div class="form-group">
-            <label for="id_first_name">LABEL</label>
-            <input type="text" name="first_name" maxlength="255" id="id_first_name">
-            </div>
+            {% for field in form %}
+                    <div class="form-group">
+                    <label for="{{ field.if_for_label }}">{{ field.label }}</label>
+                    {{ field }}
+                    </div>
+            {% endfor %}
         </div>
 
         <div class="form-content">
