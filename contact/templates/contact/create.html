@@ -15,6 +15,7 @@
                     <div class="form-group">
                     <label for="{{ field.if_for_label }}">{{ field.label }}</label>
                     {{ field }}
+                    {{ field.errors }}
                     </div>
             {% endfor %}
         </div>
