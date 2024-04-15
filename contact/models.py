@@ -6,8 +6,6 @@ from django.contrib.auth.models import User
 # first_name (string), last_name (string), phone (string)
 # email (email), created_date (date), description (text)
 # category (foreign key), show (boolean), picture (imagem)
-
-# Depois
 # owner (foreign key)
 
 class Category(models.Model):
