@@ -52,13 +52,13 @@ class ContactForm(forms.ModelForm):
                 )
             )
 
-        self.add_error(
-            'first_name',
-            ValidationError(
-                'Mensagem de erro',
-                code='invalid'
-            )
-        )
+        # self.add_error(
+        #     'first_name',
+        #     ValidationError(
+        #         'Mensagem de erro',
+        #         code='invalid'
+        #     )
+        # )
         return super().clean()
     
     def clean_first_name(self):
