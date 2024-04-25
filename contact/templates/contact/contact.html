@@ -24,4 +24,8 @@
     <p>
         <b>Category: </b>{{ contact.category.name }}
     </p>
+
+    <div class="contact-links">
+        <a href="{% url "contact:update" contact.id %}">Update</a>
+    </div>
 {% endblock content %}
