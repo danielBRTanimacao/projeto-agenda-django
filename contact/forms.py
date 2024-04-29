@@ -1,5 +1,6 @@
 from django.core.exceptions import ValidationError
 from django import forms
+from django.contrib.auth.forms import UserCreationForm
 
 from .models import Contact
 
@@ -53,4 +54,5 @@ class ContactForm(forms.ModelForm):
             ))
         return cleaned_data
 
-
+class RegisterForm(UserCreationForm):
+    ...
