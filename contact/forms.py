@@ -147,6 +147,8 @@ class RegisterUpdateForm(forms.ModelForm):
 
         if commit:
             user.save()
+        
+        return user
 
     def clean(self):
         password1 = self.cleaned_data.get('password1')

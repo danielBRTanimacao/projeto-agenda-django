@@ -45,7 +45,7 @@ def user_update(request):
         context = {
             'form': form
         }
-        return render(request, 'contact/register.html', context)
+        return render(request, 'contact/user_update.html', context)
     
     form = RegisterUpdateForm(data=request.POST, instance=request.user)
 
@@ -53,12 +53,10 @@ def user_update(request):
         context = {
             'form': form
         }
-        return render(request, 'contact/register.html', context)
+        return render(request, 'contact/user_update.html', context)
+    
     form.save()
-    context = {
-        'form': form
-    }
-    return render(request, 'contact/register.html', context)
+    return redirect('contact:user_update')
 
 def logout_view(request):
     auth.logout(request)
